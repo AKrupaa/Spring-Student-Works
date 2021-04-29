@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: burlywood;
+}

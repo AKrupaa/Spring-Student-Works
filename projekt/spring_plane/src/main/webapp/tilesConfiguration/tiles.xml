@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/header.jsp" />
+<!--        <put-attribute name="menu" value="/menu.jsp" />-->
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+ 
+    <definition name="customUserDomain" extends="base.definition">
+        <put-attribute name="title" value="AppUser" />
+        <put-attribute name="body" value="/customUserDomain.jsp" />
+    </definition>
+    
+    <definition name="homeTiles" extends="base.definition">
+        <put-attribute name="title" value="Hello" />
+        <put-attribute name="body" value="/home.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="loginTiles" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/login.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="" />
+
+    </definition>
+
+    <definition name="registerTiles" extends="base.definition">
+        <put-attribute name="title" value="Register" />
+        <put-attribute name="body" value="/register.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+
+    <definition name="accessDeniedTiles" extends="base.definition">
+        <put-attribute name="title" value="Access Denied" />
+        <put-attribute name="body" value="/accessDenied.jsp" />
+    </definition>
+
+    <definition name="userRoleTiles" extends="base.definition">
+        <put-attribute name="title" value="User Role" />
+        <put-attribute name="body" value="/userRole.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="manageUsersTiles" extends="base.definition">
+        <put-attribute name="title" value="User Role" />
+        <put-attribute name="body" value="/manageUsers.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="editOneUserTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/editOneUser.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="airplaneTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/manageAirplane.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="editOneAirplaneTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/editOneAirplane.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="buyOneTicketTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/buyOneTicket.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="pendingTicketsTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/pendingTickets.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="yourTicketsTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/yourTickets.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+    <definition name="queueTiles" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/queue.jsp" />
+        <put-attribute name="header" value="/header.jsp" />
+        <put-attribute name="footer" value="/footer.jsp" />
+    </definition>
+
+</tiles-definitions>

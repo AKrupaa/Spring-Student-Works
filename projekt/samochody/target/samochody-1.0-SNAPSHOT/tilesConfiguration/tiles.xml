@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base.definition"
+                template="/layout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="menu" value="/menu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/footer.jsp"/>
+    </definition>
+
+    <!--    <definition name="appUser" extends="base.definition">-->
+    <!--        <put-attribute name="title" value="AppUser" />-->
+    <!--        <put-attribute name="body" value="/appUser.jsp" />-->
+    <!--    </definition>-->
+
+    <definition name="welcomePage" extends="base.definition">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="body" value="/welcomePage.jsp"/>
+        <put-attribute name="header" value="/empty.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="RegisterOrLoginTiles" extends="base.definition">
+        <put-attribute name="title" value="Login or register"/>
+        <put-attribute name="body" value="/RegisterOrLoginPage.jsp"/>
+        <put-attribute name="header" value="/empty.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="testPage" extends="base.definition">
+        <put-attribute name="title" value="Rent a car"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/jakiesrzeczy.jsp"/>
+        <put-attribute name="footer" value="/footer.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="homeTiles" extends="base.definition">
+        <put-attribute name="title" value="Rent a car"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/homePage.jsp"/>
+        <put-attribute name="footer" value="/footer.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="manageCarsTiles" extends="base.definition">
+        <put-attribute name="title" value="Rent a car"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/manageCarsPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="manageUsersTiles" extends="base.definition">
+        <put-attribute name="title" value="Rent a car"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/manageUsersPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="accessDeniedTiles" extends="base.definition">
+        <put-attribute name="title" value="Access DENIED"/>
+        <put-attribute name="header" value="/empty.jsp"/>
+        <put-attribute name="body" value="/accessDeniedPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="manageCarTypeTiles" extends="base.definition">
+        <put-attribute name="title" value="Manage car type"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/manageCarTypePage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="purchaseCarTiles" extends="base.definition">
+        <put-attribute name="title" value="Manage car type"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/RentCarPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="activeBookingTiles" extends="base.definition">
+        <put-attribute name="title" value="Manage car type"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/activeBookingPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="historyTiles" extends="base.definition">
+        <put-attribute name="title" value="Manage car type"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/historyPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="myAccountTiles" extends="base.definition">
+        <put-attribute name="title" value="Manage car type"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/myAccountPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <definition name="carsListTiles" extends="base.definition">
+        <put-attribute name="title" value="Available cars"/>
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="body" value="/carListPage.jsp"/>
+        <put-attribute name="footer" value="/empty.jsp"/>
+        <put-attribute name="menu" value="/empty.jsp"/>
+    </definition>
+
+    <!--    <definition name="userAddressView" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/userAddressView.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="exampleOne" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/exampleOne.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="exampleTwo" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/exampleTwo.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="exampleThree" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/exampleThree.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="login" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/login.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="accessDenied" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/accessDenied.jsp"/>-->
+    <!--    </definition>-->
+
+    <!--    <definition name="appUserRole" extends="base.definition">-->
+    <!--        <put-attribute name="body" value="/appUserRole.jsp"/>-->
+    <!--    </definition>-->
+
+</tiles-definitions>

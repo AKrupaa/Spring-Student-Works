@@ -1,0 +1,11 @@
+.footerAlign {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    /*background-color: darkred;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    vertical-align: bottom;
+}
